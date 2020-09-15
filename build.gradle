@@ -2,7 +2,7 @@
 buildscript {
     ext.kotlin_version = "1.3.72"
     ext {
-        situmSdkDependency = 'es.situm:situm-sdk:2.61.1@aar'
+        situmSdkDependency = 'es.situm:situm-sdk:2.63.0@aar'
     }
     repositories {
         google()
