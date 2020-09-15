@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="situm_tray_notification_foreground_title">Checking social distance</string>
+    <string name="situm_tray_notification_foreground_description">Your location is used to count nearby people.</string>
+
+
+
+    <string name="situm_tray_notification_warning_geofence_title">Area capacity warning</string>
+    <string name="situm_tray_notification_warning_geofence_description">The area around you is becoming crowded.</string>
+</resources>

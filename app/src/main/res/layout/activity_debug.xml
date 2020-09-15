@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.situm.capacitycontroltestsuite.presentation.main.DebugViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.situm.capacitycontroltestsuite.presentation.main.DebugActivity">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabIndicatorColor="#ffffff"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabTextColor="#aaaaaa" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpTabs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/btStartPositioning"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabContainer" />
+
+        <ImageButton
+            android:id="@+id/btStartPositioning"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> viewModel.checkPermissionsForPositioning()}"
+            android:src="@drawable/ic_start_pos_24px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btStopPositioning"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btStopPositioning"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> viewModel.stopPositioning()}"
+            android:src="@drawable/ic_stop_24px"
+            app:layout_constraintBottom_toBottomOf="@+id/btStartPositioning"
+            app:layout_constraintEnd_toStartOf="@+id/btlogout"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btStartPositioning"
+            app:layout_constraintTop_toTopOf="@+id/btStartPositioning" />
+
+        <ImageButton
+            android:id="@+id/btlogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> viewModel.logout()}"
+            android:src="@drawable/ic_exit_to_app_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btStartPositioning"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btStopPositioning"
+            app:layout_constraintTop_toTopOf="@+id/btStartPositioning" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

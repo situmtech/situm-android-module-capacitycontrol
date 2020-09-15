@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="situm_tray_notification_foreground_title">Comprobando distancia social</string>
+    <string name="situm_tray_notification_foreground_description">Su localización se usa para calcular las personas cercanas.</string>
+
+
+
+
+
+    <string name="situm_tray_notification_warning_geofence_title">Su área está alcanzando el aforo máximo</string>
+    <string name="situm_tray_notification_warning_geofence_description">Se ha detectado que el aforo de su zona circundante se está empezando a llenar.</string>
+</resources>
