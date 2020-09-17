@@ -49,8 +49,5 @@ dependencies {
 
     implementation 'org.locationtech.jts:jts-core:1.15.0'
 
-    implementation(situmSdkDependency) {
-        transitive = true
-        changing = true
-    }
+    implementation(situmSdkDependency)
 }
