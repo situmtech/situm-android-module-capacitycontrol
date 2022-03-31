@@ -5,6 +5,11 @@ Count people in geofences &amp; trigger capacity control alerts with Situm
 1. [Capacity Control module](https://github.com/situmtech/situm-android-module-capacitycontrol/tree/master/CapacityControl) - Library module that offers Capacity Control functionality. 
 2. [Example app](https://github.com/situmtech/situm-android-module-capacitycontrol/tree/master/app) - Provides an example on how to implement the CapacityControl module with very basic functionality.
 
+## Submitting Contributions
+
+You will need to sign a Contributor License Agreement (CLA) before making a submission. 
+[Learn more here.](https://situm.com/contributions/)
+
 ## Getting started
 To use this module, you must have a Situm account configured with a building.
 
